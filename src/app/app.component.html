@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h3>Multiple Selection with Checkbox</h3>
+<p-tree [value]="filesTree" selectionMode="checkbox" [(selection)]="selectedFile"></p-tree>
+<div>Selected Nodes: <span *ngFor="let file of selectedFile">{{file.label}} </span></div>
+  <h3 class="first">Basic</h3>
+  <p>Basic Organization Chart.</p>
+  <ng2-org-chart [topEmployee]="topEmployee" (click)="getChartData($event)"></ng2-org-chart>
+  <h3 class="first">Advanced</h3> 
+  <p>Organization with advanced customization.</p>
+  <p-organizationChart [value]="data1" selectionMode="single" [(selection)]="selectedNode" styleClass="company">
+    <ng-template let-node pTemplate="person">
+      <div class="node-header ui-corner-top">{{node.label}}</div>
+      <div class="node-content">
+        <img src="" width="32">
+        <div>{{node.data.name}}</div>
+      </div>
+    </ng-template>
+    <ng-template let-node pTemplate="department">
+      {{node.label}}
+    </ng-template>
+  </p-organizationChart>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+.oc-border {
+    border: 1px solid #3e5780;
+}
+ 
+.oc-background {
+    background-color:#d3d8e0;
+}
+ 
+.oc-name {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    white-space: nowrap;
+}
+ 
+.oc-designation {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    white-space: nowrap;
+}
+ 
+.oc-img {
+    margin-left: -10px;
+    width: 60px;
+    height: 60px;
+}
+.oc-box .oc-img img{
+    margin-left: -10px;
+    width: 60px;
+    height: 60px;
+}
+
+.company.ui-organizationchart .ui-organizationchart-node-content.ui-person {
+    padding: 0;
+    border: 0 none;
+}
+
+.node-header,.node-content {
+    padding: .5em .7em;
+}
+
+.node-header {
+    background-color: #495ebb;
+    color: #ffffff;
+}
+
+.node-content {
+    text-align: center;
+    border: 1px solid #495ebb;
+}
+
+.node-content img {
+    border-radius: 50%;
+}
+
+.department-cfo {
+    background-color: #7247bc;
+    color: #ffffff;
+}
+
+.department-coo {
+    background-color: #a534b6;
+    color: #ffffff;
+}
+
+.department-cto {
+    background-color: #e9286f;
+    color: #ffffff;
+}
+
+.ui-person .ui-node-toggler {
+    color: #495ebb !important;
+}
+
+.department-cto .ui-node-toggler {
+    color: #8a0a39 !important;
+}
